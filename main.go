@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"os"
+	"github.com/joho/godotenv"
 	"github.com/DuvanR11/api/db"
 	"github.com/DuvanR11/api/models"
 	"github.com/DuvanR11/api/routes"
@@ -38,5 +39,6 @@ func main() {
 
 	//Puerto
 	// http.ListenAndServe(":3000", r)
-	http.ListenAndServe(":" + os.Getenv("PORT"), r)
+	godotenv.Load()
+	http.ListenAndServe(":"+os.Getenv("PORT"), r)
 }
