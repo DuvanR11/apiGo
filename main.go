@@ -3,11 +3,12 @@ package main
 import (
 	"net/http"
 	"os"
-	"github.com/joho/godotenv"
+
 	"github.com/DuvanR11/api/db"
 	"github.com/DuvanR11/api/models"
 	"github.com/DuvanR11/api/routes"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 )
 
 func main() {
