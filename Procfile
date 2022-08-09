@@ -1,1 +1,1 @@
-web: bin\goApi.exe
+web: bin\apiGo.exe
